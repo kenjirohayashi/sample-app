@@ -5,7 +5,6 @@ import Couter from "./Counter";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HelloWorld />
     <Couter />
   </React.StrictMode>,
   document.getElementById("app")

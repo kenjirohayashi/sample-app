@@ -1,12 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import HelloWorld from "./HelloWorld";
-import Couter from "./Counter";
+import App from "./components/app";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HelloWorld />
-    <Couter />
+    <App />
   </React.StrictMode>,
   document.getElementById("app")
 );

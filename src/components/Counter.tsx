@@ -6,13 +6,13 @@ interface Props {
 
 // eslint-disable-next-line react/display-name
 const UnMemoButton = (props: Props) => {
-  console.log("render umMemoComponent!!");
+  console.log("render メモ化されていないComponent!!");
   return <button onClick={props.onClick}>countUp 1</button>;
 };
 
 // eslint-disable-next-line react/display-name
 const MemoButton = React.memo((props: Props) => {
-  console.log("render memoComponent!!");
+  console.log("render メモ化されたComponent!!");
   return <button onClick={props.onClick}>countUp 2</button>;
 });
 

@@ -13,7 +13,7 @@ const stylesHandler = 'style-loader';
 
 
 const config = {
-    entry: './src/app.tsx',
+    entry: './src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
     },

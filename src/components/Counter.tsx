@@ -6,20 +6,20 @@ interface Props {
 
 // eslint-disable-next-line react/display-name
 const UnMemoButton = (props: Props) => {
-  console.log("render メモ化されていないComponent!!");
+  console.log("render countUp1 (メモ化されていないComponent)");
   return <button onClick={props.onClick}>countUp 1</button>;
 };
 
 // eslint-disable-next-line react/display-name
 const MemoButton = React.memo((props: Props) => {
-  console.log("render メモ化されたComponent!!");
+  console.log("render countUp2 (メモ化されたComponent)");
   return <button onClick={props.onClick}>countUp 2</button>;
 });
 
 const Counter = () => {
   useEffect(() => {
     console.log(
-      "メモ化されたコンポーネントは自身のpropsに変化がある時のみレンダリングされます"
+      "countUp2はメモ化されたコンポーネントなのでcountUp1が押された時はレンダリングされません"
     );
   }, []);
   const [count1, setCount1] = useState<number>(0);
